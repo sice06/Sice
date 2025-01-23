@@ -1,0 +1,47 @@
+1. Initialize Local Repository
+git init
+git status  # Show untracked or uncommitted changes
+
+2. Set Username and Email
+• Configure your Git username and email for this repository:
+git config --local user.name "githubUsername"
+git config --local user.email "githubEmail"
+
+• To view your current config:
+git config --list --local
+
+3. Commit Changes
+• Stage all uncommitted or new changes:
+git add .  # The dot (.) signifies all changes
+• Stage specific files:
+git add <filename> <filename>
+• Commit your staged changes:
+git commit -m "Initial commit"
+
+4. Rename Branch from master to main
+git branch -m main
+
+5. Connect to Remote Repository (GitHub)
+• Create a new repository on GitHub and copy the repository link.
+• Link the local repository to the remote GitHub repository:
+git remote add origin https://repo-link.git
+
+• To view the remote origin:
+git remote show origin
+
+6. Push Local Changes to Remote Repository
+• Push local changes to the remote main branch:
+git push origin main
+
+• Set upstream for future pushes (so that git push can be used without specifying the remote and branch each time):
+git push -u origin main
+
+7. For New Changes, Use the Following Common Commands:
+• Stage new changes:
+git add .  # Add all new or modified files
+
+• Commit the changes:
+git commit -m "description"
+
+• Push your commits to GitHub:
+git push / git push origin main
